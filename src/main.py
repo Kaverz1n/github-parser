@@ -16,6 +16,8 @@ def main():
     repo_name = input('Укажите имя репозитория, чтобы получить по нему информацию: ')
     print(postgres_db.get_data_by_name(repo_name))
 
+    postgres_db.close_connection()
+
 
 if __name__ == '__main__':
     main()
