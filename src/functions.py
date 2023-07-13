@@ -1,7 +1,6 @@
 import requests
 
 GIT_TOKEN = 'YOUR-TOKEN'
-user_name = 'skypro-008'
 
 
 def get_repos_stats(user_name: str) -> list[dict]:
@@ -50,4 +49,3 @@ def get_repos_stats(user_name: str) -> list[dict]:
             repositories.append(repo_dict)
 
     return repositories
-
